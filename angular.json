@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "930d3fc7-75d1-42d4-83e9-33178482a3b8"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -102,6 +105,68 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "product-card": {
+      "projectType": "library",
+      "root": "projects/product-card",
+      "sourceRoot": "projects/product-card/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/product-card/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/product-card/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/product-card/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/product-card/src/test.ts",
+            "tsConfig": "projects/product-card/tsconfig.spec.json",
+            "karmaConfig": "projects/product-card/karma.conf.js"
+          }
+        }
+      }
+    },
+    "product-carousel": {
+      "projectType": "library",
+      "root": "projects/product-carousel",
+      "sourceRoot": "projects/product-carousel/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/product-carousel/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/product-carousel/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/product-carousel/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/product-carousel/src/test.ts",
+            "tsConfig": "projects/product-carousel/tsconfig.spec.json",
+            "karmaConfig": "projects/product-carousel/karma.conf.js"
           }
         }
       }

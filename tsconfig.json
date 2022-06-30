@@ -16,6 +16,16 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "product-card": [
+        "dist/product-card/product-card",
+        "dist/product-card"
+      ],
+      "product-carousel": [
+        "dist/product-carousel/product-carousel",
+        "dist/product-carousel"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [
