@@ -10,7 +10,6 @@
   ],
   "assets": [
     "node_modules/bootstrap/dist/css/bootstrap.min.css",
-    "node_modules/animate.css/animate.min.css",
     "style.scss"
   ]
 }
