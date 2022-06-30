@@ -6,7 +6,8 @@
   },
   "allowedNonPeerDependencies": [
     "@fortawesome/fontawesome-svg-core",
-    "@fortawesome/angular-fontawesome"
+    "@fortawesome/angular-fontawesome",
+    "ngx-owl-carousel-o"
   ],
   "assets": [
     "node_modules/bootstrap/dist/css/bootstrap.min.css",

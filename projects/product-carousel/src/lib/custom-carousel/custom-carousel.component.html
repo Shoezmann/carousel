@@ -1,1 +1,8 @@
 <p>custom-carousel works!</p>
+<owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let product of products">
+        <ng-template carouselSlide [productId]="product.productId">
+        <img [src]="product.productImage" [alt]="product.productImageAlt" [title]="product.productDescription">
+        </ng-template>
+    </ng-container>
+</owl-carousel-o>

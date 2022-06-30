@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { ProductCarouselComponent } from './product-carousel.component';
 import { CustomCarouselComponent } from './custom-carousel/custom-carousel.component';
 import { RouterModule } from '@angular/router';
@@ -20,6 +20,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     BrowserAnimationsModule,
     CarouselModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [
     ProductCarouselComponent, CustomCarouselComponent
   ]
