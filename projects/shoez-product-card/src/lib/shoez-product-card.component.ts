@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  selector: 'lib-shoez-product-card',
+  templateUrl: './shoez-product-card.component.html',
+  styleUrls: ['./shoez-product-card.component.scss']
 })
-export class CardComponent implements OnInit {
+export class ShoezProductCardComponent implements OnInit {
 
   constructor() { }
 

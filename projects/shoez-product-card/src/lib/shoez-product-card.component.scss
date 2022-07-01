@@ -1,0 +1,50 @@
+.card{
+  align-items: center;
+  justify-content: space-around;
+  height: 20rem;
+  box-shadow: 0 2px 4px #00000014;
+  border-radius: 1rem;
+  flex-direction: column;
+  animation: fadeInAnimation ease 3s;
+  // animation-iteration-count: 1;
+  // animation-fill-mode: forwards;
+  &.active{
+      border-bottom: 0.5rem solid #f8c000;
+      -webkit-font-smoothing: antialiased;
+      min-height: 30rem;
+      animation: fadeIn 2s;
+      &:hover{
+          background-color: #000001;
+          color: #fff;
+          transition: 1s;
+          & .product-link{
+              color: #fff;
+          }
+      }
+  }
+  .product{
+      :hover{
+          color: #fff;
+      }
+      &-description{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      &-image{
+          width: 13rem;
+          & > img{
+              display: block;
+              display: block;
+              width: 100%;
+              object-fit: contain;
+              height: 100%;
+          }
+      }
+      &-link{
+          text-decoration: none;
+          color: #000;
+      }
+  }
+
+}

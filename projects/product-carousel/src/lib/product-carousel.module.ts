@@ -3,10 +3,10 @@ import { ProductCarouselComponent } from './product-carousel.component';
 import { CustomCarouselComponent } from './custom-carousel/custom-carousel.component';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ProductCardModule } from 'product-card';
+import { ShoezProductCardModule } from 'shoez-product-card';
 @NgModule({
   declarations: [
     ProductCarouselComponent,
@@ -17,7 +17,8 @@ import { ProductCardModule } from 'product-card';
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule,
-    ProductCardModule,
+
+
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [
