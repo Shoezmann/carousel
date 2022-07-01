@@ -3,6 +3,7 @@
     height: 2rem;
     border-radius: 50%;
     background: #000014;
+    z-index: inherit;
 }
 .owl-theme .owl-nav [class*=owl-]:hover{
     background: #f8c000;
@@ -10,13 +11,18 @@
 .owl-theme .owl-nav{
     display: flex;
     justify-content: space-around;
+    margin-top: -4rem;
+    z-index: 999;
 }
 .owl-item.active.center > div:after{ 
     background: black;
 }
-.owl-item.active.center > .card{
+.owl-item.active.center{
     // -webkit-transform: scale(1.8);
-    // transform: scale(1.8);
-    border-bottom: 0.5rem solid #f8c000;
-    
+    width: calc(100% * 2);
+}
+.owl-stage{
+    display: flex;
+    align-items: center;
+    transition-duration: all 2s ease 2s!important;
 }

@@ -1,13 +1,15 @@
 <div class="container-fluid">
     <div class="row carousel-wrapper">
-        <owl-carousel-o [options]="customOptions" #carousel (initialized)="getData($event)" (changed)="getData($event)">
+        <owl-carousel-o [options]="customOptions" #carousel>
             <ng-container *ngFor="let product of products">
-                <ng-template carouselSlide [id]="product.productId">
+                <ng-template carouselSlide let-owlItem [id]="product.productId">
                     <lib-card
-                    [desktopCol]="12"
+                    [activeItem] = "owlItem.isCentered"
+                    [isAction]="owlItem.isCentered" 
                     [image]="product.productImage" 
                     [alt]="product.productImageAlt" 
-                    [description]="product.productDescription">
+                    [link]="product.productLink"
+                    [description]="!owlItem.isCentered? product.productDescription : ''">
                     </lib-card>
                 </ng-template>
             </ng-container>

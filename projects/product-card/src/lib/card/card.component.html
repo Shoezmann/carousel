@@ -1,12 +1,12 @@
 <div class="col-{{desktopCol}} col-md-{{tabletCol}} carousel-lib-item">
-    <div  class="card p-2">
+    <div  class="card p-2" [ngClass]="{'active' : activeItem}" >
         <div class="product-image">
             <img [src]="image" [alt]="alt">
         </div>
         <div class="product-description">
             <h3 *ngIf="isAction">Get a device</h3>
             <h6 *ngIf="!isAction">{{description}}</h6>
-            <a *ngIf="isAction" class="p-4 product-link">START HERE</a>
+            <a *ngIf="isAction" class="p-4 product-link" href="{{link}}" target="_blank">START HERE &#10095;</a>
         </div>
     </div>
 </div>

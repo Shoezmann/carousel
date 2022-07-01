@@ -4,6 +4,7 @@ import { Product } from '../models/product.model';
 
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
+
 @Component({
   selector: 'lib-custom-carousel',
   templateUrl: './custom-carousel.component.html',
@@ -12,15 +13,10 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 })
 
 export class CustomCarouselComponent implements OnInit {
-  activeSlides!: SlidesOutputData;
-  
-  activeCenterItems: any;
-
-  centerItem: boolean = false;
-
   faChevronLeft = faChevronLeft;
   faChevronRight = faChevronRight;
 
+  
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
@@ -29,10 +25,14 @@ export class CustomCarouselComponent implements OnInit {
     dots: false,
     navSpeed: 700,
     autoWidth: true,
-    navText: ['<fa-icon [icon]="faChevronLeft"></fa-icon>', '<fa-icon [icon]="faChevronRight"></fa-icon>'],
+    navText: ['&#10094;', '&#10095;'],
     // autoplay: true,
     center: true,
-    margin: 20,
+    margin: 25,
+    stagePadding: 100,
+    animateIn: 'slideOutDown',
+    animateOut: 'fadeOut',
+    smartSpeed:450,
     responsive: {
       0: {
         items: 1
@@ -58,18 +58,5 @@ export class CustomCarouselComponent implements OnInit {
 
   
   ngOnInit(): void {
-  }
-
-  getData(data: SlidesOutputData) {
-    this.activeSlides = data;
-    this.activeCenterItems = this.activeSlides.slides;
-    console.log(this.activeCenterItems);
-    for(let i = 0; i < this.activeCenterItems.length; i++){
-      if(this.activeCenterItems[i].center){
-        this.centerItem =true;
-        console.log(this.centerItem);
-      }
-    }
-    console.log(this.activeSlides);
   }
 }
