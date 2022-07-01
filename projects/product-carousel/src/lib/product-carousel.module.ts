@@ -17,6 +17,7 @@ import { ShoezProductCardModule } from 'shoez-product-card';
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule,
+    ShoezProductCardModule
 
 
   ],
