@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-shoez-product-card',
+  selector: 'lib-card',
   templateUrl: './shoez-product-card.component.html',
   styleUrls: ['./shoez-product-card.component.scss']
 })
