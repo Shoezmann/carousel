@@ -5,9 +5,8 @@
     "entryFile": "src/public-api.ts"
   },
   "allowedNonPeerDependencies": [
-    "@fortawesome/fontawesome-svg-core",
-    "@fortawesome/angular-fontawesome",
-    "ngx-owl-carousel-o"
+    "ngx-owl-carousel-o",
+    "animate.css"
   ],
   "assets": [
     "node_modules/bootstrap/dist/css/bootstrap.min.css",
