@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ShoezProductCardComponent } from './shoez-product-card.component';
 
@@ -8,6 +9,7 @@ import { ShoezProductCardComponent } from './shoez-product-card.component';
     ShoezProductCardComponent
   ],
   imports: [
+    CommonModule
   ],
   exports: [
     ShoezProductCardComponent

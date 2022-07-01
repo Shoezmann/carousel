@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { CarouselComponent, OwlOptions, SlidesOutputData } from 'ngx-owl-carousel-o';
+import { CarouselComponent, OwlOptions,} from 'ngx-owl-carousel-o';
 import { Product } from '../models/product.model';
 @Component({
   selector: 'lib-custom-carousel',

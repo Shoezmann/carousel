@@ -1,5 +1,5 @@
 <div class="col-{{desktopCol}} col-md-{{tabletCol}} carousel-lib-item">
-  <div class="card p-2"  >
+  <div class="card p-2"  [ngClass]="{'active': activeItem}">
       <div class="product-image">
           <img [src]="image" [alt]="alt">
       </div>
@@ -10,4 +10,3 @@
       </div>
   </div>
 </div>
-<!-- [ngClass]="{'active' : activeItem}" -->
