@@ -18,7 +18,6 @@ import { ProductCardModule } from 'product-card-acc';
     BrowserAnimationsModule,
     CarouselModule,
     ProductCardModule,
-    NoopAnimationsModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [
