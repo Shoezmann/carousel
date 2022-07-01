@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'lib-card',
   templateUrl: './shoez-product-card.component.html',

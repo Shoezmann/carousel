@@ -1,8 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { ShoezProductCardComponent } from './shoez-product-card.component';
-
-
 
 @NgModule({
   declarations: [
@@ -11,6 +9,7 @@ import { ShoezProductCardComponent } from './shoez-product-card.component';
   imports: [
     CommonModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [
     ShoezProductCardComponent
   ]

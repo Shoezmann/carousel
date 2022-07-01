@@ -7,6 +7,8 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ShoezProductCardModule } from 'shoez-product-card';
+
+import { IgxIconModule } from 'igniteui-angular';
 @NgModule({
   declarations: [
     ProductCarouselComponent,
@@ -17,9 +19,8 @@ import { ShoezProductCardModule } from 'shoez-product-card';
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule,
-    ShoezProductCardModule
-
-
+    ShoezProductCardModule,
+    IgxIconModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [

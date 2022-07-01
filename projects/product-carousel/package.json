@@ -6,12 +6,15 @@
     "@angular/core": "^14.0.4",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.0.1",
+    "igniteui-angular": "^14.0.4",
     "ngx-owl-carousel-o": "^7.0.3"
   },
   "dependencies": {
+    "feather-icons": "^4.29.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^14.0.4"
+    "@angular-devkit/build-angular": "^14.0.4",
+    "@types/feather-icons": "^4.7.0"
   }
 }

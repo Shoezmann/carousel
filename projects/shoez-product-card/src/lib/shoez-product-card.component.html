@@ -4,9 +4,9 @@
           <img [src]="image" [alt]="alt">
       </div>
       <div class="product-description">
-          <h3 *ngIf="isAction">Get a device</h3>
-          <h6 *ngIf="!isAction">{{description}}</h6>
-          <a *ngIf="isAction" class="p-4 product-link" href="{{link}}" target="_blank">START HERE &#10095;</a>
+          <h2 *ngIf="isAction">Get a device</h2>
+          <h5 *ngIf="!isAction">{{description}}</h5>
+          <a *ngIf="isAction" class="p-4 product-link" href="{{link}}" target="_blank">START HERE</a>
       </div>
   </div>
 </div>
