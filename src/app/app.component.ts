@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { product } from 'projects/product-carousel/src/lib/custom-carousel/custom-carousel.component';
+import { Product } from 'product-carousel';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,15 +7,56 @@ import { product } from 'projects/product-carousel/src/lib/custom-carousel/custo
 })
 export class AppComponent {
 
-
-  products: product[] =  [
+  products: Product[] =  [
     {
-      productId: 1,
-      productImage: 'https://onlinecms.mtn.co.za/sites/default/files/product-images/apple/iPhone-12-mini-black.png',
+      productId:'1',
+      productImage: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1600',
       productLink: '',
       productImageAlt: 'Test',
       productDescription: ''
-    }
+    },
+    {
+      productId:'1',
+      productImage: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      productLink: '',
+      productImageAlt: 'Test',
+      productDescription: ''
+    },
+    {
+      productId:'1',
+      productImage: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      productLink: '',
+      productImageAlt: 'Test',
+      productDescription: ''
+    },
+    {
+      productId:'1',
+      productImage: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      productLink: '',
+      productImageAlt: 'Test',
+      productDescription: ''
+    },
+    {
+      productId:'1',
+      productImage: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      productLink: '',
+      productImageAlt: 'Test',
+      productDescription: ''
+    },
+    {
+      productId:'1',
+      productImage: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      productLink: '',
+      productImageAlt: 'Test',
+      productDescription: ''
+    },
+    {
+      productId:'1',
+      productImage: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      productLink: '',
+      productImageAlt: 'Test',
+      productDescription: ''
+    },
 
   ]
 }

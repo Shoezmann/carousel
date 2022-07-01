@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-card',
@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
 
   constructor() { }
+
+  @Input() isAction: boolean = false;
+  @Input() desktopCol!: number;
+  @Input() tabletCol!: number;
+  @Input() description: string = '';
+  @Input() image: string = '';
+  @Input() alt: string = '';
 
   ngOnInit(): void {
   }

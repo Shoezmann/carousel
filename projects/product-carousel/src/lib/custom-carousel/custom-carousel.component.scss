@@ -1,0 +1,22 @@
+.owl-theme .owl-nav [class*=owl-]{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #000014;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: #f8c000;
+}
+.owl-theme .owl-nav{
+    display: flex;
+    justify-content: space-around;
+}
+.owl-item.active.center > div:after{ 
+    background: black;
+}
+.owl-item.active.center > .card{
+    // -webkit-transform: scale(1.8);
+    // transform: scale(1.8);
+    border-bottom: 0.5rem solid #f8c000;
+    
+}

@@ -6,4 +6,5 @@ export * from './lib/product-carousel.service';
 export * from './lib/product-carousel.component';
 export * from './lib/product-carousel.module';
 
-export * from './lib/custom-carousel/custom-carousel.component'
+export * from './lib/custom-carousel/custom-carousel.component';
+export * from './lib/models/product.model'
