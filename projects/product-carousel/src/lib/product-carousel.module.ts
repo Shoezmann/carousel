@@ -6,10 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ProductCardModule } from 'product-card';
-
-import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
-
+import { ProductCardModule } from 'product-card-acc';
 @NgModule({
   declarations: [
     ProductCarouselComponent,
@@ -21,7 +18,6 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
     BrowserAnimationsModule,
     CarouselModule,
     ProductCardModule,
-    FontAwesomeModule,
     NoopAnimationsModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
