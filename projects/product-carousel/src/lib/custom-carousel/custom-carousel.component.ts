@@ -1,10 +1,6 @@
 import { Component, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { CarouselComponent, OwlOptions, SlidesOutputData } from 'ngx-owl-carousel-o';
 import { Product } from '../models/product.model';
-
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-
-
 @Component({
   selector: 'lib-custom-carousel',
   templateUrl: './custom-carousel.component.html',
@@ -13,10 +9,8 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 })
 
 export class CustomCarouselComponent implements OnInit {
-  faChevronLeft = faChevronLeft;
-  faChevronRight = faChevronRight;
 
-  
+
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
@@ -52,11 +46,11 @@ export class CustomCarouselComponent implements OnInit {
 
   @Input() products!: Product[];
 
-  @ViewChild('carousel')  carousel!: CarouselComponent; 
+  @ViewChild('carousel')  carousel!: CarouselComponent;
 
   constructor() { }
 
-  
+
   ngOnInit(): void {
   }
 }
