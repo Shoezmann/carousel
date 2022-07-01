@@ -6,7 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ProductCardModule } from 'product-card-acc';
+import { ProductCardModule } from 'product-card';
 @NgModule({
   declarations: [
     ProductCarouselComponent,
