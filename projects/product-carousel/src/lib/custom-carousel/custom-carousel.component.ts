@@ -26,7 +26,7 @@ export class CustomCarouselComponent implements OnInit {
     navSpeed: 700,
     autoWidth: true,
     navText: ['&#10094;', '&#10095;'],
-    // autoplay: true,
+    autoplay: true,
     center: true,
     margin: 25,
     stagePadding: 100,
