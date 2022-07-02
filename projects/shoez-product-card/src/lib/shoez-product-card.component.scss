@@ -1,18 +1,24 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
 .card{
   align-items: center;
   justify-content: space-around;
+  padding: 2rem;
   height: 20rem;
-  box-shadow: 0 2px 4px #00000014;
+  box-shadow: 0 0 45px #00000014;
   border-radius: 1rem;
   flex-direction: column;
   animation: fadeInAnimation ease 3s;
-  // animation-iteration-count: 1;
-  // animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  font-family: 'Open Sans', sans-serif;
   &.active{
       border-bottom: 0.5rem solid #f8c000;
       -webkit-font-smoothing: antialiased;
       min-height: 30rem;
       animation: fadeIn 2s;
+      .product-image{width: 13rem;}
       &:hover{
           background-color: #000001;
           color: #fff;
@@ -32,7 +38,7 @@
           align-items: center;
       }
       &-image{
-          width: 13rem;
+          width: 8rem;
           & > img{
               display: block;
               display: block;

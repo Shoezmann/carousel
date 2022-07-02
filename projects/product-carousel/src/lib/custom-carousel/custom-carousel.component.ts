@@ -1,8 +1,6 @@
-import { AfterViewInit, Component, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { CarouselComponent, OwlOptions,} from 'ngx-owl-carousel-o';
 import { Product } from '../models/product.model';
-
-import * as feather from 'feather-icons';
 @Component({
   selector: 'lib-custom-carousel',
   templateUrl: './custom-carousel.component.html',
@@ -10,7 +8,7 @@ import * as feather from 'feather-icons';
   encapsulation: ViewEncapsulation.None
 })
 
-export class CustomCarouselComponent implements OnInit, AfterViewInit {
+export class CustomCarouselComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: true,
@@ -20,7 +18,7 @@ export class CustomCarouselComponent implements OnInit, AfterViewInit {
     dots: false,
     navSpeed: 700,
     autoWidth: true,
-    navText: ['<i data-feather="chevrons-left"></i>', '<i data-feather="chevrons-right"></i>'],
+    navText: [  '<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
     autoplay: true,
     center: true,
     margin: 25,
@@ -53,8 +51,5 @@ export class CustomCarouselComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit(): void {
-  }
-  ngAfterViewInit() {
-    feather.replace();
   }
 }

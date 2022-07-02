@@ -1,9 +1,15 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
 .owl-theme .owl-nav [class*=owl-]{
-    width: 2rem;
-    height: 2rem;
+    display:flex;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     background: #000014;
     z-index: inherit;
+    flex-direction: column;
+    justify-content: center;
+    outline: auto;
+    outline-style: round;
 }
 .owl-theme .owl-nav [class*=owl-]:hover{
     background: #f8c000;
@@ -17,5 +23,5 @@
 .owl-stage{
     display: flex;
     align-items: center;
-    transition-duration: all 2s ease 2s!important;
+    transition: all 0.45s ease 0s!important;
 }
